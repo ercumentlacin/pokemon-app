@@ -12,6 +12,7 @@ const Navbar = () => {
           <img
             style={{ maxHeight: 2.2 + "rem" }}
             src="https://pokeapi.co/static/pokeapi_256.888baca4.png"
+            alt="Pokemon App Logo"
           />
         </Link>
         <button
@@ -28,11 +29,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav align-items-center">
             <li className="nav-item">
-              <li className="nav-link active" aria-current="page">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/pokodex">

@@ -25,9 +25,8 @@ const About = () => {
       <div>
         <div className="row">
           {data.map((item, index) => (
-            <div className="col-sm-6 col-md-4 col-lg-3 my-3 ">
+            <div key={index} className="col-sm-6 col-md-4 col-lg-3 my-3 ">
               <div
-                key={index}
                 className={`card p-3 text-capitalize mx-auto bg-${theme}`}
                 style={{ maxWidth: 18 + "rem" }}
               >
