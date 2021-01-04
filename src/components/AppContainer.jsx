@@ -11,6 +11,11 @@ import ThemeContext from "../context/ThemeContext";
 const AppContainer = () => {
   const { theme } = useContext(ThemeContext);
 
+  const body = document.body;
+  theme == "light"
+    ? body.classList.remove("bg-dark") & body.classList.add("bg-light")
+    : body.classList.remove("bg-light") & body.classList.add("bg-dark");
+
   return (
     <main className={`bg-${theme}`}>
       <Router>
