@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <Navbar />
-      <div className="d-flex justify-content-end ps-5 mt-5">
+      <div className="d-flex justify-content-end ps-5">
         <ThemeSwitcher />
       </div>
     </header>

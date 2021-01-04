@@ -17,7 +17,7 @@ function PortfolioDetail(props) {
         <div className="d-flex justify-content-center">
           <img src={`${heroes[0].imgURL}`} />
         </div>
-        <h1 class="mb-3">{heroes[0].title}</h1>
+        <h1 className="mb-3">{heroes[0].title}</h1>
         <p>{heroes[0].detail}</p>
       </div>
     </div>

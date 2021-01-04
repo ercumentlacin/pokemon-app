@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link className="navbar-brand" to="/">
           <img
             style={{ maxHeight: 2.2 + "rem" }}
-            src="https://pokeapi.co/static/pokeapi_256.888baca4.png"
+            src="https://raw.githubusercontent.com/ercumentlacin/pokemon-app/master/src/images/pokeapi_256.png"
             alt="Pokemon App Logo"
           />
         </Link>
