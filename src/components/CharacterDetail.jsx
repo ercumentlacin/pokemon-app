@@ -45,7 +45,7 @@ export const CharacterDetail = ({ index, item }) => {
             <strong>Abilities:</strong>
             {details && (
               <div className="text-left">
-                {details.abilities.map(item => item.ability.name).join(",")}
+                {details.abilities.map(item => item.ability.name).join(", ")}
               </div>
             )}
           </div>
