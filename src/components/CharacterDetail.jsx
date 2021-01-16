@@ -31,15 +31,23 @@ export const CharacterDetail = ({ index, item }) => {
           <hr />
           <div className="d-flex justify-content-between">
             <strong>Experince:</strong>{" "}
-            {details && <sapan> {details.base_experience} </sapan>}
+            {details && <span> {details.base_experience} </span>}
           </div>
           <div className="d-flex justify-content-between mt-2">
             <strong>Height:</strong>{" "}
-            {details && <sapan> {details.height} </sapan>}
+            {details && <span> {details.height} </span>}
           </div>
           <div className="d-flex justify-content-between mt-2">
             <strong>Weight:</strong>{" "}
-            {details && <sapan> {details.weight} </sapan>}
+            {details && <span> {details.weight} </span>}
+          </div>
+          <div className="mt-2">
+            <strong>Abilities:</strong>
+            {details && (
+              <div className="text-left">
+                {details.abilities.map(item => item.ability.name).join(",")}
+              </div>
+            )}
           </div>
         </div>
         {/* Detaylar */}
