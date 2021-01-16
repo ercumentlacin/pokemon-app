@@ -28,13 +28,22 @@ export const CharacterDetail = ({ index, item }) => {
         />
         <div className="card-body">
           <h4>{item.name}</h4>
-          <p className="card-text">{item.name}</p>
-          <a href={item.url}>link</a>
+          <hr />
+          <div className="d-flex justify-content-between">
+            <strong>Experince:</strong>{" "}
+            {details && <sapan> {details.base_experience} </sapan>}
+          </div>
+          <div className="d-flex justify-content-between mt-2">
+            <strong>Height:</strong>{" "}
+            {details && <sapan> {details.height} </sapan>}
+          </div>
+          <div className="d-flex justify-content-between mt-2">
+            <strong>Weight:</strong>{" "}
+            {details && <sapan> {details.weight} </sapan>}
+          </div>
         </div>
-      {/* Detaylar */}
-        {details && <h6> {details.base_experience} </h6>}
+        {/* Detaylar */}
       </div>
-
     </div>
   );
 };
